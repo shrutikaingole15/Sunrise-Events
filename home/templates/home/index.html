@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Events</title>
+
+    <!-- Load Static Files -->
+    {% load static %}
+
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">Company Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <h1>Your happiness is our Responsibility</h1>
+        <a href="{% url 'services' %}" class="btn btn-dark mt-3">View Services</a>
+    </section>
+
+    <section class="hero text-center">
+        <h1>We are Sunrise Events</h1>
+        <p>We Plan, You Celebrate!</p>
+        <a href="{% url 'contact' %}" class="btn btn-dark mt-3">Contact Us</a>
+    </section>
+    
+    
+
+    <!-- About Us Section -->
+    <section class="container section text-center">
+        <h3>ABOUT US</h3>
+        <p>We create unforgettable moments with our event planning services.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container section text-center">
+        <h3>Our Services</h3>
+        <div class="row services">
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/100" alt="Service 1">
+                <p>Destination Weddings</p>
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/100" alt="Service 2">
+                <p>Honeymoon & Travel Wedding</p>
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/100" alt="Service 3">
+                <p>Videographers Wedding</p>
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/100" alt="Service 4">
+                <p>Celebrant</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h3>Reviews</h3>
+        <div class="carousel slide" id="reviewCarousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>"Best event planners! Made our wedding magical!"</p>
+                </div>
+                <div class="carousel-item">
+                    <p>"Professional and creative. Loved their decorations!"</p>
+                </div>
+                <div class="carousel-item">
+                    <p>"Highly recommend Sunrise Events for any occasion!"</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Company Logo</p>
+        <p>Follow us on Social Media</p>
+        <p>Scripted with ❤️</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

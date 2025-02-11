@@ -1,0 +1,92 @@
+/* Global Styles */
+body { 
+    font-family: 'Poppins', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar { 
+    background: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px 20px;
+}
+.navbar .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+.navbar .nav-link:hover {
+    color: #FFCE03; /* Adds a hover effect */
+}
+
+/* Hero Section */
+.hero { 
+    text-align: center; 
+    padding: 120px 20px; 
+    background: linear-gradient(135deg, #ff9a9e 10%, #fad0c4 100%);
+    color: white;
+    border-radius: 0 0 50px 50px;
+}
+.hero h1 { 
+    font-weight: bold; 
+    font-style: italic; 
+    font-size: 42px;
+}
+.btn-dark { 
+    padding: 12px 25px; 
+    font-size: 18px; 
+    background-color: #343a40;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+}
+.btn-dark:hover { 
+    background-color: #FFCE03; 
+    transform: scale(1.05);
+}
+
+/* Sections */
+.section { 
+    padding: 60px 0; 
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin: 30px 15px;
+}
+.section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+.services { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+.services img { 
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    transition: transform 0.3s ease-in-out; 
+}
+.services img:hover { 
+    transform: scale(1.1); 
+}
+
+/* Reviews */
+.reviews { 
+    background: #f8f9fa; 
+    padding: 50px 20px; 
+    text-align: center;
+}
+.reviews blockquote {
+    font-style: italic;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 5px solid #ff6b6b;
+    padding-left: 15px;
+}
+
+/* Footer */
